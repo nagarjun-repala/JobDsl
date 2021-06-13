@@ -2,7 +2,7 @@ job('maven_dsl') {
     description('Maven dsl project')
 
     scm{
-        git('https://github.com/NagarjunRepala/simple-java-maven-app.git', 'master')
+        git('https://github.com/NagarjunRepala/simple-java-maven-app.git', 'master', {node -> node / 'extensions' << '' })
     }
 
     steps{
