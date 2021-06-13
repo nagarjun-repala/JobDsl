@@ -16,7 +16,7 @@ job('maven_dsl') {
         }        
         shell('''
             echo ************RUNNING THE JAR************************     
-            java -jar /var/jenkins_home/workspace/mavn/target/my-app-1.0-SNAPSHOT.jar
+            java -jar /var/jenkins_home/workspace/maven_dsl/target/my-app-1.0-SNAPSHOT.jar
         ''')        
     }
     publishers {
